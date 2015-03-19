@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Inicio">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="¡Bienvenido!"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button style="@style/Button"
+            android:id="@+id/Calculus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ARITMÉTICA" />
+
+        <Button  style="@style/Button"
+            android:id="@+id/Ecuationis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ECUACIONES" />
+
+        <Button  style="@style/Button"
+            android:id="@+id/Sastre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ÚTILES" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Powered by Andrés M. Jiménez"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ajr.mapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Inicio"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Aritmetica"
+            android:label="Aritmética"
+            android:parentActivityName=".Inicio" > <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Inicio" /> <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->>
+            <intent-filter>
+                <action android:name="ajr.Aritmetica" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Algebra"
+            android:label="Álgebra"
+            android:parentActivityName=".Inicio" > <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Inicio" /> <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->>>
+            <intent-filter>
+                <action android:name="ajr.Algebra" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Cajon"
+            android:label="Utilidades"
+            android:parentActivityName=".Inicio" > <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Inicio" /> <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->>>
+            <intent-filter>
+                <action android:name="ajr.Cajon" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".About"
+            android:label="Información"
+            android:parentActivityName=".Inicio" > <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Inicio" /> <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->>>
+            <intent-filter>
+                <action android:name="ajr.About" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

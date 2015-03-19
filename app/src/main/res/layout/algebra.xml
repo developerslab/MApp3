@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".Algebra">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/xCubo"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="2"
+            android:hint="@string/xCubo"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xCubo"
+            android:layout_alignBottom="@+id/xCubo"
+            android:layout_toRightOf="@+id/xCubo"
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/xCuadrado"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="2"
+            android:hint="@string/xCuadrado"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xCuadrado"
+            android:layout_alignBottom="@+id/xCuadrado"
+            android:layout_toRightOf="@+id/xCuadrado"
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/x"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="2"
+            android:hint="x"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/x"
+            android:layout_alignBottom="@+id/x"
+            android:layout_toRightOf="@+id/x"
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="2"
+            android:hint="n"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button style="@style/Button"
+            android:id="@+id/factorizar"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xCubo"
+            android:layout_marginTop="50dp"
+            android:text="RESOLVER"
+            android:layout_alignLeft="@+id/xCubo" />
+
+        <TextView
+            android:id="@+id/factorizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="ecuacion"
+            android:gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignBaseline="@+id/factorizar"
+            android:layout_alignParentRight="true" />
+
+        <Button style="@style/Button"
+            android:id="@+id/esPrimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="DERIVAR"
+            android:layout_below="@+id/factorizar"
+            android:layout_alignLeft="@+id/factorizar"
+            android:layout_alignStart="@+id/factorizar"
+            android:layout_alignRight="@+id/factorizar"
+            android:layout_alignEnd="@+id/factorizar" />
+
+        <TextView
+            android:id="@+id/derivada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="derivada"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/esPrimo"
+            android:layout_alignRight="@+id/factorizacion" />
+
+        <Button style="@style/Button"
+            android:id="@+id/pot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="F(x)"
+            android:layout_below="@+id/esPrimo"
+            android:layout_alignRight="@+id/esPrimo"
+            android:layout_alignEnd="@+id/esPrimo"
+            android:layout_alignLeft="@+id/esPrimo"
+            android:layout_alignStart="@+id/esPrimo" />
+
+        <TextView
+            android:id="@+id/solucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="F(x)="
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/pot2"
+            android:layout_alignRight="@+id/factorizacion"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/punto"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/pot2"
+            android:layout_alignBottom="@+id/pot2"
+            android:layout_toRightOf="@+id/pot2"
+            android:hint="x" />
+
+    </RelativeLayout>
+</ScrollView>

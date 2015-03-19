@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".Aritmetica">
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Resultado" />
+
+    <EditText
+        android:id="@+id/PrimerMiembro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Resultado"
+        android:layout_marginLeft="10dp"
+        android:hint="Nº 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/SegundoMiembro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LL"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:hint="Nº 2"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/PrimerMiembro"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button style="@style/Button"
+            android:id="@+id/Suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sumar" />
+
+        <Button style="@style/Button"
+            android:id="@+id/Resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restar" />
+
+        <Button style="@style/Button"
+            android:id="@+id/Mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicar" />
+
+        <Button style="@style/Button"
+            android:id="@+id/Div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividir" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Lista"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/LL"
+        android:layout_marginTop="10dp"
+
+        ></ListView>
+</RelativeLayout>

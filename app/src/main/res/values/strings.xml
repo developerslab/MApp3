@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MApp</string>
+    <string name="sumar">+</string>
+    <string name="restar">-</string>
+    <string name="multiplicar">×</string>
+    <string name="dividir">÷</string>
+    <string name="action_settings">Sobre la aplicación</string>
+    <string name="xCubo">x<sup>3</sup></string>
+    <string name="xCuadrado">x<sup>2</sup></string>
+    <string name="pot2">2<sup>n</sup></string>
+
+</resources>

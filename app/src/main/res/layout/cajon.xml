@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".Cajon">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Button  style="@style/Button"
+            android:id="@+id/factorizar"
+            android:layout_marginLeft="10dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FACTORIZAR" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/numberFactorizacion"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/factorizar"
+            android:layout_alignBottom="@+id/factorizar"
+            android:layout_toRightOf="@+id/factorizar"
+            android:hint="n"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/factorizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="factorizacion"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/factorizar"
+            android:layout_alignParentRight="true" />
+
+        <Button style="@style/Button"
+            android:id="@+id/esPrimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="¿ES PRIMO?"
+            android:layout_below="@+id/factorizar"
+            android:layout_alignLeft="@+id/factorizar"
+            android:layout_alignStart="@+id/factorizar"
+            android:layout_alignRight="@+id/factorizar"
+            android:layout_alignEnd="@+id/factorizar" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberPrimo"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/esPrimo"
+            android:layout_alignBottom="@+id/esPrimo"
+            android:layout_toRightOf="@+id/esPrimo"
+            android:hint="n" />
+
+        <TextView
+            android:id="@+id/primalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="primalidad"
+            android:layout_alignBaseline="@+id/esPrimo"
+            android:gravity="end"
+            android:layout_alignRight="@+id/factorizacion" />
+
+        <Button style="@style/Button"
+            android:id="@+id/pot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="POTENCIA 2"
+            android:layout_below="@+id/esPrimo"
+            android:layout_alignRight="@+id/esPrimo"
+            android:layout_alignEnd="@+id/esPrimo"
+            android:layout_alignLeft="@+id/esPrimo"
+            android:layout_alignStart="@+id/esPrimo" />
+
+        <TextView
+            android:id="@+id/solpot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="@string/pot2"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/pot2"
+            android:layout_alignRight="@+id/factorizacion"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberpot2"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/pot2"
+            android:layout_alignBottom="@+id/pot2"
+            android:layout_toRightOf="@+id/pot2"
+            android:hint="x" />
+
+        <Button style="@style/Button"
+            android:id="@+id/DB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="A DECIMAL"
+            android:layout_below="@+id/pot2"
+            android:layout_alignRight="@+id/pot2"
+            android:layout_alignEnd="@+id/pot2"
+            android:layout_alignLeft="@+id/pot2"
+            android:layout_alignStart="@+id/pot2" />
+
+        <TextView
+            android:id="@+id/solDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Decimal"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/DB"
+            android:layout_alignRight="@+id/factorizacion"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/numberDB"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/DB"
+            android:layout_alignBottom="@+id/DB"
+            android:layout_toRightOf="@+id/DB"
+            android:hint="binario"
+            android:inputType="number" />
+
+        <Button style="@style/Button"
+            android:id="@+id/BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="A BINARIO"
+            android:layout_below="@+id/DB"
+            android:layout_alignRight="@+id/DB"
+            android:layout_alignEnd="@+id/DB"
+            android:layout_alignLeft="@+id/DB"
+            android:layout_alignStart="@+id/DB" />
+
+        <TextView
+            android:id="@+id/solBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Binario"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/BD"
+            android:layout_alignRight="@+id/factorizacion"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberBD"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/BD"
+            android:layout_alignBottom="@+id/BD"
+            android:layout_toRightOf="@+id/BD"
+            android:hint="decimal" />
+
+        <Button style="@style/Button"
+            android:id="@+id/aleatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ALEATORIO"
+            android:layout_below="@+id/BD"
+            android:layout_alignRight="@+id/BD"
+            android:layout_alignEnd="@+id/BD"
+            android:layout_alignLeft="@+id/BD"
+            android:layout_alignStart="@+id/BD" />
+
+        <TextView
+            android:id="@+id/solAleatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Aleatorio"
+            android:gravity="end"
+            android:layout_alignBaseline="@+id/aleatorio"
+            android:layout_alignRight="@+id/factorizacion"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberA"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/aleatorio"
+            android:layout_alignBottom="@+id/aleatorio"
+            android:layout_toRightOf="@+id/aleatorio"
+            android:hint="min" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberB"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/numberA"
+            android:layout_alignBaseline="@+id/aleatorio"
+            android:layout_alignBottom="@+id/aleatorio"
+            android:hint="max" />
+
+    </RelativeLayout>
+</ScrollView>
